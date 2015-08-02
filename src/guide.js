@@ -41,11 +41,11 @@ $(document).ready(function() {
 
   var ua = navigator.userAgent.toLowerCase();
   if(ua.search(/(iphone)|(ipod)|(android)/) != -1) {
-      $(".guide-not-for-mobile").hide();
+      $(".guide-for-desktop").hide();
       $(".guide-for-mobile").show();
   }
   else {
-      $(".guide-not-for-mobile").show();
+      $(".guide-for-desktop").show();
       $(".guide-for-mobile").hide();
   }  
 })

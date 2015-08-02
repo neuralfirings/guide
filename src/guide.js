@@ -40,7 +40,7 @@ $(document).ready(function() {
 
 
   var ua = navigator.userAgent.toLowerCase();
-  alert(ua);
+  // alert(ua);
   if(ua.search(/(iphone)|(ipod)|(android)/) != -1) {
     $(".guide-for-desktop").hide();
     $(".guide-for-mobile").show();

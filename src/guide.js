@@ -40,12 +40,13 @@ $(document).ready(function() {
 
 
   var ua = navigator.userAgent.toLowerCase();
+  alert(ua);
   if(ua.search(/(iphone)|(ipod)|(android)/) != -1) {
-      $(".guide-for-desktop").hide();
-      $(".guide-for-mobile").show();
+    $(".guide-for-desktop").hide();
+    $(".guide-for-mobile").show();
   }
   else {
-      $(".guide-for-desktop").show();
-      $(".guide-for-mobile").hide();
+    $(".guide-for-desktop").show();
+    $(".guide-for-mobile").hide();
   }  
 })

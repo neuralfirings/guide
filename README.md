@@ -1,8 +1,8 @@
 # Guide
 
-Guide is a scrappy framework for writing.. well, Guides. Like the name suggest. I really didn't get creative with the name here, guys. 
+Guide is a scrappy framework for writing.. well, Guides. Like the name suggest. I really didn't get creative with the name here, guys. The point of guide is to make a simple framework for making iFixit or Makezine style tutorials and guides. 
 
-The point of guide is to make a simple framework for making iFixit or Makezine style tutorials and guides. 
+I put together a simple [example.html](http://neuralfirings.github.io/guide/example.html) page. 
 
 ## Installation
 
@@ -62,4 +62,4 @@ else {
 </div>
 ```
 
-You know what? Just go and muck around in the examples.html file. That's probably the best way to figure out what's going on.
+You know what? Just go and muck around in the [example.html](http://neuralfirings.github.io/guide/example.html) file. That's probably the best way to figure out what's going on.

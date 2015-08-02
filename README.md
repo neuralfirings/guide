@@ -19,7 +19,7 @@ Installation is pretty straightforward. You will need jQuery, then attach the `g
 
 Afterwards, you can create guide steps by using the following code template. A Guide Step is basically one or more images on the left side, with some text based instructions on the right. When the screen is smaller, the images take up the whole width. You know, responsive blah blah blah.
 
-```
+```html
 <div class="guide-step">
   <div class="guide-images">
     <img src="01_breadboard.jpg" data-caption="Fritzing Breadboard View">
@@ -38,7 +38,7 @@ Afterwards, you can create guide steps by using the following code template. A G
 
 If your main thing isn't an image, but say a chunk of code, you can use the `guide-main` class instead of the `guide-images` class. For example:
 
-```
+```html
 <div class="guide-step">
   <div class="guide-main">
     <pre>

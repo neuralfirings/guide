@@ -1,0 +1,106 @@
+<html>
+  <head>      
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Guide Example</title>
+   
+    <!-- jQuery) -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- For Making Guide (requires jQuery) -->
+    <script src="src/guide.js"></script>
+    <link rel="stylesheet" href="src/guide.css">    
+
+    <!-- For Code Highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <style>
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>How to Create a Custom PCB</h1>
+    This is an example using the Guide Template. 
+    <div class="guide-step">
+      <div class="guide-images">
+        <img src="example_images/01_breadboard.jpg" data-caption="Fritzing Breadboard View">
+      </div>
+      <div class="guide-text">
+        <h2>Step 1</h2>
+        There's one big picture and a few bullet points.
+        <ul>
+          <li>Open Fritzing</li>
+          <li>Make sure you're in BreadBoard View</li>
+          <li>Search for components and drag in to mimic your setup</li>
+        </ul>
+      </div>
+    </div>
+    <div class="guide-step">
+      <div class="guide-images">
+        <img src="example_images/02a_pcb_airwires.jpg" data-caption="PCB Airwires">
+        <img src="example_images/02b_pcb_routed.jpg" data-caption="PCB Routed">
+      </div>
+      <div class="guide-text">
+        <h2>Step 2</h2>
+        This step has multiple pictures.
+        <ul>
+          <li>Switch to PCB Tab</li>
+          <li>Click on components and use Cmd+R/Ctrl+R to rotate</li>
+          <li>You can drag components around by holding down the left mouse button</li>
+          <li>Click on the wires to route and add bendpoints</li>
+          <li>Resize the board appropriately</li>
+        </ul>
+      </div>
+    </div>
+    <div class="guide-step">
+      <div class="guide-main">
+        <pre>
+          <code>
+  var ua = navigator.userAgent.toLowerCase();
+  if(ua.search(/(iphone)|(ipod)|(android)/) != -1) {
+      $(".not-for-mobile").hide();
+      $(".for-mobile").show();
+  }
+  else {
+      $(".not-for-mobile").show();
+      $(".for-mobile").hide();
+  }  
+          </code>
+        </pre>
+      </div>
+      <div class="guide-text">
+        <h2>Step 3</h2>
+        Here are some example code. The highlighting is using highlight.js. 
+      </div>
+    </div>
+    <div class="guide-step">
+      <div class="guide-main">
+        <div class="guide-for-mobile">
+        <a target="_blank" href="http://nyl.io/impress/espmotor.html?mobile=on"><img src="http://nyl.io/impress/espmotor.png"></a>
+        </div>
+
+        <div class="guide-not-for-mobile" style="position:relative; padding-bottom: 75%; padding-top: 25px; ">
+        <iframe frameborder="0" src="http://nyl.io/impress/espmotor.html" style="position: absolute; top:0; left:0; width: 100%; height: 100%"></iframe></div>
+      </div>
+      <div class="guide-text">
+        <h2>Step 4</h2>
+        <p>This is something made with impress.js.. well, a hacked version made for presenting with captions. </p>
+        <div class="guide-for-mobile">
+          Click on the diagram on the left to go through the workflow. It will open up a new page. Once you are on the new page, click on the RIGHT SIDE of the screen to go forward, and click on the LEFT SIDE of the screen to go back. 
+        </div>
+        <div class="guide-not-for-mobile">
+          Click on the diagram on the left to go through the workflow.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+

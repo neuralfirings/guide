@@ -103,7 +103,7 @@
 
 /* Guide Text Container */
 .guide-text {
-  float: left;
+  float: right;
   box-sizing: border-box;
 }
 @media (min-width: 10px)  {

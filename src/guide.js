@@ -28,6 +28,14 @@ $(document).ready(function() {
     $(this).closest(".guide-images").find(".guide-image-caption").text(imgcaption)
   })
 
+
+  $(".guide-step").find(".guide-title").each(function() {
+    $(this).clone().prependTo($(this).closest(".guide-step")).addClass("guide-title-top")
+    $(this).addClass("guide-title-side")
+    // console.log("hello", _this)
+    // $(this).closest(".guide-step").prepend(_this)
+  })
+
   $(window).resize(function() {
     $(".guide-images").each(function() {
       heightRatio = $(this).attr("data-heightratio")

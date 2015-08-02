@@ -12,6 +12,22 @@
   display: table;
   clear: both;
 }
+@media (min-width: 10px)  {
+  .guide-title-top {
+    display: block;
+  }
+  .guide-title-side {
+    display: none;
+  }
+}
+@media (min-width: 992px)  {
+  .guide-title-top {
+    display: none;
+  }
+  .guide-title-side {
+    display: block;
+  }
+}
 
 /* Guide Image Container */
 .guide-images {
@@ -94,6 +110,9 @@
 @media (min-width: 10px)  {
   .guide-text {
     width: 100%;
+  }
+  .guide-text h2 {
+    data-move: true;
   }
 }
 @media (min-width: 992px)  {
